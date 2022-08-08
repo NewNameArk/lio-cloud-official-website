@@ -37,7 +37,7 @@ export default ({ command }) => {
   };
 
   if (command === 'build') {
-    config.plugins.push(
+    config.plugins!.push(
       visualizer({
         open: false,
         gzipSize: true,

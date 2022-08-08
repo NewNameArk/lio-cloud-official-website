@@ -9,12 +9,11 @@
           <th>Price</th>
         </tr>
       </thead>
-
       <tbody>
-        <tr v-for="item  in  fruitList"  :key="item.id">
-          <td >{{item.id}}</td>
-          <td >{{item.name}}</td>
-          <td >{{item.price}}</td>
+        <tr v-for="item in fruitList" :key="item.id">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.price }}</td>
         </tr>
       </tbody>
     </table>
@@ -27,7 +26,7 @@ import { ref } from 'vue';
 import { IFruitItem } from '@/types/market';
 
 const marketStore = useMarket();
-const fruitList = ref<IFruitItem[]>([])
+const fruitList = ref<IFruitItem[]>([]);
 await marketStore.getList();
 
 fruitList.value = marketStore.fruitList;

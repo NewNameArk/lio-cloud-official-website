@@ -7,11 +7,12 @@
     "noUnusedLocals": true,
     "jsx": "preserve",
     "noImplicitReturns": true,
+    "noImplicitAny":false,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "baseUrl": ".",
-    "types": ["axios", "node", "vite/client"],
-    "typeRoots": ["."],
+    "types": ["axios", "node", "vite/client", "jest"],
+    "typeRoots": [".","./src/types", "./src/@types","node_modules/@types"],
     "paths": {
       "@/*": ["src/*"]
     }
