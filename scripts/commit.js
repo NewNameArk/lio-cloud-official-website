@@ -8,7 +8,12 @@ const run = (bin, args, opts = {}) => {
 }
 async function main() {
   await run('git', ['add', '.'])
-  await run('git', ['cz'])
+  try {
+    await run('git', ['cz'])
+  } catch(e) {
+    console.log(e)
+    return
+  }
   await run('git', ['pull'])
   await run('git', ['push'])
 }

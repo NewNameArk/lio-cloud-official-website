@@ -25,7 +25,7 @@ import { onMounted, ref } from 'vue'
 const time = ref('')
 onMounted(()=> {
   window.setInterval(() => {
-    time.value = new Date().toLocaleString(); 
+    time.value = new Date().toLocaleString();
   }, 1000);
 })
 </script>
