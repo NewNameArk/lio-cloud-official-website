@@ -68,11 +68,11 @@ const submitHandle = () => {
 
 <style lang="scss">
 .form {
-  width: 450px;
-  margin: 0 auto;
+	margin: 0 auto;
+	width: 450px;
 }
 .box-card {
-  width: 480px;
-  margin: 20px auto;
+	margin: 20px auto;
+	width: 480px;
 }
 </style>

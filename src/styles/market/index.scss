@@ -1,12 +1,12 @@
 h2 {
-  padding-top: 10px;
+	padding-top: 10px;
 }
 .table {
-  width: 70%;
-  margin: 30px auto;
-  td {
-    text-align: center;
-    padding: 8px 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
-  }
+	margin: 30px auto;
+	width: 70%;
+	td {
+		padding: 8px 15px;
+		border-bottom: 1px solid rgba(0, 0, 0, .03);
+		text-align: center;
+	}
 }
